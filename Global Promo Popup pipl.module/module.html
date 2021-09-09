@@ -1,0 +1,83 @@
+{% if module.on_popup %}
+	<!-- HTML to show when checked -->
+
+<a class="popup" data-fancybox href="#fancybox" >
+
+</a>
+
+	<!-- HTML to show when checked -->
+
+<div id="fancybox" class="promo-section " style="display:none;">
+  
+  <div class="promo-cover">
+    
+    <div class="promo-image">
+
+      {% if module.banner_image.src %}
+      {% set sizeAttrs = 'width="{{ module.banner_image.width }}" height="{{ module.banner_image.height }}"' %}
+      {% if module.banner_image.size_type == 'auto' %}
+      {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+      {% elif module.banner_image.size_type == 'auto_custom_max' %}
+      {% set sizeAttrs = 'width="100%" height="auto" style="max-width: {{ module.banner_image.max_width }}px; max-height: {{ module.banner_image.max_height }}px"' %}
+      {% endif %}
+      <a href="{{ module.popop_image_link }}">
+      <img src="{{ module.banner_image.src }}" alt="{{ module.banner_image.alt }}" {{ sizeAttrs }}>
+      </a>
+      {% endif %}
+      {% if module.enable_popup_link %} {% if module.enable_cta %} {% endif %}
+      <div class="cta-button">
+        {% cta guid="{{ module.cta_field }}" %}
+      </div>
+      {% if module.enable_popup_link %} {% endif %} {% endif %}
+    </div>
+    
+    
+      </div>
+    </div> 
+
+
+{% if module.enable_cta %}
+<style>
+  .promo-cover { padding:15px; background-color: white; }
+</style>
+{% endif %}
+
+<script>
+  
+$(window).load(function() {
+
+  var val = getCookie('isFancyboxOpen');
+  console.log(val)
+  if(val != 'true'){
+    $.fancybox.open({
+      src: "#fancybox",
+      type: "inline",
+      clickSlide : 'false',
+      clickOutside : 'false',
+    });
+  }
+  $('.promo-section button.fancybox-close-small').on('click',function(){
+    setCookie('isFancyboxOpen',true);
+    console.log('done')
+  });
+  
+  
+  
+});  
+  
+// BROWSER COOKIE TIME IN DAYS
+function getCookie(name) {
+    var v = document.cookie.match('(^|;) ?' + name + '=([^;]*)(;|$)');
+    return v ? v[2] : null;
+}
+// DAYS HUBL FIELD VARIABLE
+function setCookie(name, value) {
+    var now = new Date;
+    var days = {{ module.setcookie_time_minutes }};
+    now.setTime(now.getTime() + (days * 24 * 60 * 60 * 1000));
+    document.cookie = name + "=" + value + ";path=/;expires=" + now.toGMTString();
+} 
+
+</script>
+
+ {% endif %}   

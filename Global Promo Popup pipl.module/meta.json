@@ -1,0 +1,13 @@
+{
+  "global" : true,
+  "smart_type" : "NOT_SMART",
+  "inline_help_text" : "Use this module globally on all pages except Verify page.",
+  "host_template_types" : [ "PAGE" ],
+  "module_id" : 54228919915,
+  "js_assets" : [ {
+    "url" : "https://f.hubspotusercontent10.net/hubfs/6381214/cookie.min.js",
+    "autoload" : true,
+    "name" : "cookie.min.js"
+  } ],
+  "is_available_for_new_content" : true
+}

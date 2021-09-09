@@ -1,0 +1,122 @@
+[ {
+  "id" : "276e0e71-1e3f-662f-86fc-4764754b91d0",
+  "name" : "on_popup",
+  "label" : "Enable Popup?",
+  "required" : false,
+  "locked" : true,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : false
+}, {
+  "id" : "0c4c57da-c2f5-65cc-657f-beb1f88a75c7",
+  "name" : "banner_image",
+  "label" : "Banner Image",
+  "required" : false,
+  "locked" : true,
+  "visibility" : {
+    "controlling_field" : "276e0e71-1e3f-662f-86fc-4764754b91d0",
+    "controlling_value_regex" : "true",
+    "operator" : "EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://f.hubspotusercontent10.net/hubfs/6381214/VERIFY-bg-v.2-w-text-CTA.png",
+    "alt" : "VERIFY-bg-v.2-w-text-CTA",
+    "loading" : "lazy",
+    "width" : 1152,
+    "height" : 580,
+    "max_width" : 1152,
+    "max_height" : 580
+  }
+}, {
+  "id" : "c4b02eec-1c8e-1021-cf7f-df3ec1cf22ed",
+  "name" : "enable_popup_link",
+  "label" : "Enable Popup Link",
+  "required" : false,
+  "locked" : true,
+  "visibility" : {
+    "controlling_field" : "276e0e71-1e3f-662f-86fc-4764754b91d0",
+    "controlling_value_regex" : "true",
+    "operator" : "EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "display" : "toggle",
+  "type" : "boolean",
+  "default" : true
+}, {
+  "id" : "fc99cc30-d5e5-b63e-ee66-85d86c715bd2",
+  "name" : "popop_image_link",
+  "label" : "Popop Image Link",
+  "required" : false,
+  "locked" : true,
+  "validation_regex" : "",
+  "visibility" : {
+    "controlling_field" : "276e0e71-1e3f-662f-86fc-4764754b91d0",
+    "controlling_value_regex" : "true",
+    "operator" : "EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "placeholder" : "https://pipl.com/product/pipl-verify",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "https://pipl.com/product/pipl-verify"
+}, {
+  "id" : "3f2d3bcc-8023-2e98-950d-8b3c0971135d",
+  "name" : "enable_cta",
+  "label" : "Enable CTA?",
+  "required" : false,
+  "locked" : true,
+  "visibility" : {
+    "controlling_field" : "276e0e71-1e3f-662f-86fc-4764754b91d0",
+    "controlling_value_regex" : "true",
+    "operator" : "EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "display" : "toggle",
+  "type" : "boolean",
+  "default" : false
+}, {
+  "id" : "562a6402-96b2-5379-d260-c65e171559f5",
+  "name" : "cta_field",
+  "label" : "CTA field",
+  "required" : false,
+  "locked" : true,
+  "visibility" : {
+    "controlling_field" : "276e0e71-1e3f-662f-86fc-4764754b91d0",
+    "controlling_value_regex" : "true",
+    "operator" : "EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "type" : "cta"
+}, {
+  "id" : "710de987-5844-505e-df44-d127a68e6ad1",
+  "name" : "setcookie_time_minutes",
+  "label" : "Cookie Time in Days",
+  "inline_help_text" : "This option will set the time in days saved on a Browser Cookie to reappear X-days after dismissal (closing the pop-up)",
+  "required" : false,
+  "locked" : true,
+  "validation_regex" : "",
+  "visibility" : {
+    "controlling_field" : "276e0e71-1e3f-662f-86fc-4764754b91d0",
+    "controlling_value_regex" : "true",
+    "operator" : "EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "placeholder" : "10",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "10"
+} ]
