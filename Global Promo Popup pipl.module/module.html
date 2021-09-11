@@ -1,10 +1,7 @@
 {% if module.on_popup %}
+
 	<!-- HTML to show when checked -->
-
-<a class="popup" data-fancybox href="#fancybox" >
-
-</a>
-
+<a class="popup" data-fancybox href="#fancybox"> </a>
 	<!-- HTML to show when checked -->
 
 <div id="fancybox" class="promo-section " style="display:none;">
@@ -35,17 +32,11 @@
       </div>
     </div> 
 
-
-{% if module.enable_cta %}
-<style>
-  .promo-cover { padding:15px; background-color: white; }
-</style>
-{% endif %}
-
+{% require_js %}
 <script>
   
 $(window).load(function() {
-
+// FIRST CHECK
   var val = getCookie('isFancyboxOpen');
   console.log(val)
   if(val != 'true'){
@@ -79,5 +70,6 @@ function setCookie(name, value) {
 } 
 
 </script>
+{% end_require_js %}
 
  {% endif %}   
