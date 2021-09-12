@@ -1,3 +1,4 @@
+/* Don't touch this line */
 .fancybox-stage .fancybox-close-small{ top: 0 !important;  right: 0; }
 
 .promo-section { position: fixed; left: 0; right: 0; font-family: 'Source Sans Pro', sans-serif; z-index: 9999; background-color: rgba(0, 0, 0, 0.70); top: 0; bottom: 0; width: 100%; text-align: center; display: flex; align-items: center; box-sizing: border-box; }
@@ -5,36 +6,34 @@
 .promo-cover .cta-button{ padding-top:15px; }
 .promo-textrow { text-align:center; float: left; width: 100%; background: #067b89; margin-top: -1px; background: -moz-linear-gradient(top, #067b89 47%, #cbe3e6 100%); background: -webkit-linear-gradient(top, #067b89 47%, #cbe3e6 100%); background: linear-gradient(to bottom, #067b89 47%, #cbe3e6 100%); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#067b89', endColorstr='#cbe3e6', GradientType=0); padding: 22px; padding-top: 0; }
 .promo-section * { box-sizing: border-box; }
-.promo-title h2 {    color: #fff; font-size: 34px; line-height: 38px; text-transform: uppercase; }
-.promo-two-part { float: left; width: 100%; display: flex;   padding-top: 25px;    padding-bottom: 15px; }
-.promo-two-part span { color: #fff; text-transform: uppercase;     padding: 0 30px;    position: relative;    font-size: 17px;    line-height: 22px;  }
+.promo-title h2 { color: #fff; font-size: 34px; line-height: 38px; text-transform: uppercase; }
+.promo-two-part { float: left; width: 100%; display: flex; padding-top: 25px; padding-bottom: 15px; }
+.promo-two-part span { color: #fff; text-transform: uppercase; padding: 0 30px; position: relative; font-size: 17px; line-height: 22px;  }
 .promo-two-part span:nth-child(2):before { position: absolute; content: ""; border-left: 1px solid #fff; width: 26px; left: 3px; height: 65px; }
-.promo-text { float: left; width: 100%; color: #fff; padding-top: 12px;    font-family: 'Great Vibes', cursive;    font-size: 30px;    line-height: 39px; }
-
+.promo-text { float: left; width: 100%; color: #fff; padding-top: 12px; font-family: 'Great Vibes', cursive; font-size: 30px; line-height: 39px; }
 
 .promo-footer { float: left; width: 100%; display: flex; color: #fff; align-items: center; justify-content: flex-end; padding-top: 20px; }
 span.promo-logo img { max-width: 169px; }
 span.promo-add { text-align: right; padding-right: 18px; }
 span.promo-add a { color: #8a7292; }
-a.closs-popup {  position: absolute;  right: 22px; width: 35px;  top: 11px;  z-index: 9;   max-width: 510px;  }
-div#fancybox{  /* max-width:650px; */ background:transparent !important; }
-button.fancybox-close-small {    top: -10px !important;}
-.fancybox-close-small svg{    stroke: #fff !important; }
+a.closs-popup { position: absolute;  right: 22px; width: 35px;  top: 11px;  z-index: 9;   max-width: 510px;  }
+div#fancybox{ background:transparent !important; }
+button.fancybox-close-small { top: -10px !important;}
+.fancybox-close-small svg{ stroke: #fff !important; }
 html, body { overflow-x: visible !important; }
 .fancybox-active::-webkit-scrollbar { width: 12px; height: 12px; }
 .fancybox-active::-webkit-scrollbar-track { box-shadow: inset 0 0 10px #fff; border-radius: 10px; }
 .fancybox-active::-webkit-scrollbar-thumb { border-radius: 10px; background: #5cafb7; box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5); }
 
-
 @media (max-width:500px){
-  .promo-two-part{     flex-direction: column; }
+  .promo-two-part{ flex-direction: column; }
   .promo-two-part span:nth-child(2):before{  border-left:none; border-top: 1px solid #fff; width: 100%;   left: 3px;  height: 65px;   right: 0;    top: 0; }
   .promo-two-part span:nth-child(2) {  margin-top: 15px;   padding-top: 15px; }
   .promo-footer{ justify-content: center;  flex-direction: column;   text-align: center;}
   span.promo-add br { display: block; }
-   span.promo-add { text-align: center; padding-right: 0; margin-bottom: 19px; }
-  .promo-title h2{   font-size: 28px;   line-height: 30px; }
+  span.promo-add { text-align: center; padding-right: 0; margin-bottom: 19px; }
+  .promo-title h2{ font-size: 28px; line-height: 30px; }
   .promo-text{  font-size: 25px;   line-height: 36px; }
-  .promo-two-part{  padding-top: 15px;   padding-bottom: 5px; }
+  .promo-two-part{ padding-top: 15px; padding-bottom: 5px; }
   .promo-textrow{ padding: 15px; }
 }
