@@ -10,3 +10,15 @@
 This module also supports HubSpot built-in CTA and styling options.
 <br>
 <img src="https://github.com/DreamDevourer/HubSpot-Basic-Promo-Popup/blob/main/Sample.jpg?raw=true" alt="Module on page editor working as intended." width="100%" height="auto">
+
+## 📄 License
+
+Permissions of this strong copyleft license are conditioned on making available complete source code of licensed works and modifications, which include larger works using a licensed work, under the same license. Copyright and license notices must be preserved. Contributors provide an express grant of patent rights.
+
+| Permissions | Restrictions | Conditions
+| --- | --- | --- 
+&check; Commercial Use | &times; Liability | &#x1f6c8; License and Copyright Notice
+&check; Modification   | &times; Warranty | &#x1f6c8; State changes
+&check; Distribution |  | &#x1f6c8; Disclose source
+&check; Patent Use |  | &#x1f6c8; Same license
+&check; Private Use
